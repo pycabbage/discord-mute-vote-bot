@@ -1,5 +1,10 @@
 #!/usr/bin/env node
 
+import { install } from "source-map-support";
+install({
+  environment: "node",
+});
+
 import { TOKEN } from "./token"
 const { Client, Intents } = require("discord.js");
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
@@ -25,6 +30,6 @@ client.on('interactionCreate', async (interaction) => {
     await interaction.reply("Hello!")
   }
 })
-
+console.log(`Login with ${TOKEN}`)
 client.login(TOKEN);
 

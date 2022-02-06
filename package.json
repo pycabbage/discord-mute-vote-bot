@@ -12,9 +12,13 @@
     "build:dev": "webpack --mode development"
   },
   "dependencies": {
+    "bufferutil": "^4.0.6",
     "core-js": "^3.21.0",
     "discord.js": "^13.6.0",
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "erlpack": "discord/erlpack",
+    "source-map-support": "^0.5.21",
+    "utf-8-validate": "^5.0.8"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.0",
